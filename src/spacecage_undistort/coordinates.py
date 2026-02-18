@@ -93,7 +93,7 @@ def transform_slp_coordinates(
     labels = sio.load_slp(slp_input_path)
 
     # Remove predictions if present (only transform ground truth)
-    labels.remove_predictions()
+    #labels.remove_predictions()
 
     print(f"Loading calibration from: {calibration_path}")
     K, dist, image_size, rms_error = load_calibration(calibration_path)
