@@ -1,10 +1,10 @@
 # NASA SpaceCage Video Undistortion Tool
 
-A self-contained, portable tool for undistorting fisheye camera videos using calibration grid segments. Designed for NASA SpaceCage videos with grid-based calibration patterns.
+A self-contained, portable tool for correcting the spherical aberration of the filter cameras of the AEM-X mouse vivariums used by NASA aboard the International Space Station. This workflow uses the internal metal wire grid as a calibration reference.
 
 ## Overview
 
-This tool corrects fisheye lens distortion in videos by:
+This tool corrects for spherical aberration in Filter Camera videos by:
 1. Using labeled grid segments (ROIs) as calibration references
 2. Estimating camera intrinsic parameters and distortion coefficients
 3. Applying undistortion to produce corrected video output
@@ -319,7 +319,7 @@ Each unit is typically 1cm (configurable with `--side-length`).
 ## Credits
 
 - **labelroi**: [https://github.com/talmolab/labelroi](https://github.com/talmolab/labelroi)
-- Developed for NASA SpaceCage experiments at Talmo Lab
+- Developped for a NASA-funded project aiming to capture mouse pose and behavior in spaceflight [NASA grant 80NSSC24K0346](https://taskbook.nasaprs.com/tbp/index.cfm?action=public_query_taskbook_content&TASKID=16097)
 
 ## License
 
